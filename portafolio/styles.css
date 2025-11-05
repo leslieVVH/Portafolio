@@ -1,0 +1,87 @@
+:root {
+  --color-bg: #ffd2e5;
+  --color-primary: #ec7190;
+  --color-text: #913448;
+  --color-muted: #e797a9;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Barra lateral */
+#sidebarMenu {
+  background-color: rgba(10, 25, 47, 0.95);
+  width: 180px;
+  z-index: 1000;
+  border-left: 2px solid var(--color-primary);
+}
+
+#sidebarMenu .nav-link {
+  color: var(--color-muted);
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+#sidebarMenu .nav-link:hover,
+#sidebarMenu .nav-link.active {
+  color: var(--color-primary);
+  transform: translateX(-6px);
+}
+
+/* Contenido */
+.content {
+  margin-right: 200px;
+  padding: 60px 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* Imagen perfil */
+.perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-primary);
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #52e0c4;
+}
+
+/* Proyectos */
+.project-card {
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(100, 255, 218, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  #sidebarMenu {
+    display: none;
+  }
+  .content {
+    margin-right: 0;
+    padding: 30px 15px;
+  }
+}

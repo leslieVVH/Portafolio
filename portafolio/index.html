@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Leslie Villagra</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fuente e íconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2b4d5f3b1.js" crossorigin="anonymous"></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#sidebarMenu" data-bs-offset="100" tabindex="0">
+
+  <!-- 🔹 Barra lateral derecha -->
+  <aside id="sidebarMenu" class="d-none d-lg-flex flex-column justify-content-center align-items-end position-fixed top-0 end-0 h-100 p-4">
+    <nav class="text-end">
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li class="nav-item mb-2"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li class="nav-item mb-2"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li class="nav-item mb-2"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li class="nav-item mb-2"><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- 🔹 Contenido principal -->
+  <main class="content">
+
+    <!-- Inicio -->
+    <section id="inicio" class="vh-100 d-flex flex-column justify-content-center align-items-center text-center">
+      <img src="img/unnamed.jpg" alt="Foto de perfil" class="perfil mb-3">
+      <h1>Hola, soy <span class="highlight">Leslie Villagra</span></h1>
+      <p class="lead mb-4">Programadora en formación, enfocada en desarrollo web y bases de datos.</p>
+      <a href="#proyectos" class="btn btn-primary btn-lg">Ver proyectos</a>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section container text-center">
+      <h2 class="mb-4">Sobre mí</h2>
+      <p class="fs-5">
+        Soy estudiante de programación con conocimientos en HTML, CSS, JavaScript y Python. 
+        Me apasiona crear sitios web visualmente agradables, funcionales y responsivos. 
+        Mi objetivo es seguir aprendiendo y poder aprender de paginas webs  y mas lenguaje de la programación.      </p>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section container">
+      <h2 class="text-center mb-5">Habilidades</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-3 col-6">
+          <i class="fab fa-html5 fa-3x text-warning mb-2"></i>
+          <h5>HTML</h5>
+          <p>Básico</p>
+        </div>
+        <div class="col-md-3 col-6">
+          <i class="fab fa-css3-alt fa-3x text-info mb-2"></i>
+          <h5>CSS</h5>
+          <p>Básico</p>
+        </div>
+        <div class="col-md-3 col-6">
+          <i class="fab fa-js fa-3x text-warning mb-2"></i>
+          <h5>JavaScript</h5>
+          <p>Básico</p>
+        </div>
+        <div class="col-md-3 col-6">
+          <i class="fab fa-python fa-3x text-success mb-2"></i>
+          <h5>Python</h5>
+          <p>Básico</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section container text-center">
+      <h2 class="mb-5">Proyectos</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+          <div class="card project-card shadow-sm" data-link="https://leslievvh.github.io/Wendys/">
+            <img src="img/Wendys-logo (1).svg" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1</h5>
+              <p class="card-text">Sitio web Wendys.</p>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section container text-center">
+      <h2 class="mb-4">Contacto</h2>
+      <form id="contactForm" class="mx-auto" style="max-width:500px;">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="correo" placeholder="Tu correo" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </form>
+    </section>
+
+    <footer class="text-center py-3 mt-5 border-top">
+      <p class="mb-0">© 2025 Leslie Villagra | Portafolio Programador</p>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
